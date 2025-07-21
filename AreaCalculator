@@ -1,0 +1,31 @@
+package prgms;
+class AreaCalculator{
+	public void area(double r) {
+		double circle=3.14*r*r;
+		System.out.println("Area of the circle:\t"+circle);		
+	}
+	public void area(double l,double w) {
+		double rectangle=l*w;
+		System.out.println("Area of the rectangle:\t"+rectangle);	
+	}
+	public void area(float b,float h) {
+		float triangle=0.5f*b*h;
+		System.out.println("Area of the triangle:\t"+triangle);
+	}
+	public void area(int a) {
+		int square=a*a;
+		System.out.println("Area of the square:\t"+square);
+	}
+
+}
+
+
+public class Area {
+	public static void main(String[] args) {
+		AreaCalculator areacalculator=new AreaCalculator();
+		areacalculator.area(3.5);
+		areacalculator.area(2.5, 3.50);
+		areacalculator.area(3.3, 4.5);
+		areacalculator.area(5);
+	}
+}
