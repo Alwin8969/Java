@@ -1,0 +1,30 @@
+/*Author:Alwin Joshy
+ * Date:01/08/2025
+ * Description:Using static void to get student count
+ */
+
+
+package Two;
+class Student{
+	String name;
+	int rollNumber;
+	static int studentcount=0;
+	Student(String name,int rollNumber){
+	 this.name=name;
+	 this.rollNumber=rollNumber;
+	 studentcount++;
+	 }
+	public static void getStudentDetails(){
+		System.out.println(studentcount);
+	}
+}
+public class Static {
+	public static void main(String[] args) {
+		Student s1=new Student("Alwin",16);
+		Student s2=new Student("Adi",6);
+		Student s3=new Student("Noel",56);
+		Student.getStudentDetails();
+		
+	}
+}
+
